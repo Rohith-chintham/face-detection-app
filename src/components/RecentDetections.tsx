@@ -41,7 +41,7 @@ const RecentDetections = ({ detections, onSelect }: RecentDetectionsProps) => {
                 </div>
               </div>
               <div className="p-2 bg-slate-50 text-xs text-slate-600">
-                {formatDistanceToNow(new detection.timestamp, { addSuffix: true })}
+                {formatDistanceToNow(detection.timestamp, { addSuffix: true })}
               </div>
             </div>
           ))}
